@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinsoo Clinic: ช่องทางติดต่อ</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff; /* White card background */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 30px;
+            width: 100%;
+            max-width: 400px; /* Max width for mobile-first design */
+            text-align: center;
+            animation: fadeIn 0.8s ease-out; /* Fade-in animation */
+        }
+        .button-link {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin-bottom: 15px; /* Spacing between buttons */
+            border-radius: 12px; /* More rounded buttons */
+            font-weight: 600; /* Semi-bold text */
+            font-size: 1.1em;
+            text-decoration: none;
+            color: #ffffff; /* White text on buttons */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+        }
+        .button-link:hover {
+            transform: translateY(-3px); /* Lift effect on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
+        .bg-facebook { background-color: #1877F2; }
+        .bg-instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .bg-line { background-color: #00B900; }
+        .bg-google-maps { background-color: #4285F4; }
+
+        .title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #666666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .title {
+                font-size: 1.6em;
+                margin-bottom: 20px;
+            }
+            .subtitle {
+                font-size: 1em;
+                margin-bottom: 25px;
+            }
+            .button-link {
+                padding: 12px 15px;
+                font-size: 1em;
+                margin-bottom: 12px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ติดต่อ Jinsoo Clinic</h1>
+        <p class="subtitle">เลือกช่องทางที่คุณสะดวกเพื่อเชื่อมต่อกับเราได้เลยค่ะ</p>
+
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/share/1CK48jtUvY/?mibextid=wwXIfr" target="_blank" class="button-link bg-facebook">
+            Facebook Page
+        </a>
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/jinsooclinic?igsh=ZXVkcTR2Z3EzbGZz" target="_blank" class="button-link bg-instagram">
+            Instagram
+        </a>
+
+        <!-- Line OA Button -->
+        <a href="https://lin.ee/fopwJaO" target="_blank" class="button-link bg-line">
+            เพิ่มเพื่อน Line OA
+        </a>
+
+        <!-- Google Maps - สาขาที่ 1 -->
+        <a href="https://maps.app.goo.gl/xXxqkeRW8WP6wPJB6?g_st=ic" target="_blank" class="button-link bg-google-maps">
+            แผนที่คลินิก สาขางามวงศ์วาน
+        </a>
+
+        <!-- Google Maps - สาขาที่ 2 -->
+        <a href="https://maps.app.goo.gl/7G8yGW3tBX2Kohhv8?g_st=ic" target="_blank" class="button-link bg-google-maps">
+            แผนที่คลินิก สาขาราชเทวี
+        </a>
+
+        <p class="mt-8 text-sm text-gray-500">
+            ขอขอบคุณที่เลือกใช้บริการ Jinsoo Clinic ค่ะ
+        </p>
+    </div>
+</body>
+</html>
